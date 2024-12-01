@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBNB - Détails</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="icon" href="static/images/icon.png">
+</head>
+<body>
+    <header>
+        <img src="static/images/logo.png" alt="HBNB Logo" class="logo">
+        <nav>
+            <a href="index.html">Accueil</a>
+            <button onclick="logoutUser()" class="login-button">Déconnexion</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="place-details" class="place-details"></div>
+        
+        <div class="reviews-section">
+            <h2>Avis</h2>
+            <div id="reviews-container" class="reviews-container"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HBNB. Tous droits réservés.</p>
+    </footer>
+
+    <script src="static/js/config.js"></script>
+    <script src="static/js/auth.js"></script>
+    <script src="static/js/place-details.js"></script>
+</body>
+</html>

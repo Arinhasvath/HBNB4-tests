@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBNB - Accueil</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="icon" href="static/images/icon.png">
+</head>
+<body>
+    <header>
+        <img src="static/images/logo.png" alt="HBNB Logo" class="logo">
+        <nav>
+            <div class="filter-container">
+                <select id="price-filter" class="price-filter">
+                    <option value="all">Tous les prix</option>
+                    <option value="10">Jusqu'à 10€</option>
+                    <option value="50">Jusqu'à 50€</option>
+                    <option value="100">Jusqu'à 100€</option>
+                </select>
+            </div>
+            <div class="auth-container">
+                <a href="login.html" id="login-link" style="display: none;">Connexion</a>
+                <button id="logout-button" class="login-button" onclick="handleLogout()">Déconnexion</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="places-container">
+            <h1>Nos hébergements disponibles</h1>
+            <div id="places-list" class="places-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HBNB. Tous droits réservés.</p>
+    </footer>
+
+    <script src="static/js/config.js"></script>
+    <script src="static/js/auth.js"></script>
+    <script src="static/js/places.js"></script>
+</body>
+</html>
